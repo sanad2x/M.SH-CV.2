@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mohamed Sherif - CV</title>
+<style>
+:root{--ink:#111;--bg:#fff;--hl:#000;--hlt:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"SFMono-Regular",Menlo,Consolas,"Courier New",monospace;font-size:14px;line-height:1.65}
+main{position:relative;z-index:1;max-width:680px;margin:0 auto;padding:28px 20px 60px}
+#intro{position:fixed;inset:0;z-index:10;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;transition:transform .9s cubic-bezier(.77,0,.18,1);}
+#intro.hide{transform:translateY(-100%)}
+#intro h1{font-size:clamp(26px,8vw,48px);margin:0;font-weight:700;letter-spacing:-.02em;display:flex;flex-wrap:wrap;justify-content:center;overflow:hidden}
+#intro h1 span{display:inline-block;transform:translateY(110%);opacity:0;animation:up .7s cubic-bezier(.2,.8,.2,1) forwards}
+#intro h1 span.sp{width:.4em}
+@keyframes up{to{transform:translateY(0);opacity:1}}
+#intro .bar{width:min(240px,60vw);height:3px;background:#e6e6e6;overflow:hidden}
+#intro .bar i{display:block;height:100%;width:0;background:#000;animation:fill 1.8s .3s ease-in-out forwards}
+@keyframes fill{to{width:100%}}
+#intro .sub{font-size:12px;letter-spacing:.2em;text-transform:uppercase;opacity:0;animation:fade .6s 1s forwards}
+@keyframes fade{to{opacity:.7}}
+#intro .sub::after{content:"";animation:cnt 1.8s .3s steps(1) forwards}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+nav a{transition:transform .2s}
+nav a:hover{transform:translateY(-2px)}
+header{margin-bottom:34px;border-bottom:1px dashed #000;padding-bottom:22px}
+header h1{font-size:28px;margin:0 0 8px;letter-spacing:-.02em}
+header p{margin:2px 0}
+nav{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
+nav a{color:var(--hlt);background:var(--hl);text-decoration:none;padding:1px 8px;font-size:12px}
+section{margin:0 0 38px}
+h2{font-size:16px;text-transform:uppercase;letter-spacing:.08em;margin:0 0 14px;display:flex;align-items:center;gap:10px}
+.num{background:var(--hl);color:var(--hlt);padding:1px 8px;font-size:13px}
+h3{font-size:14px;margin:16px 0 4px}
+ul{margin:6px 0;padding-left:20px}
+li{margin:4px 0}
+.tag{display:inline-block;background:var(--hl);color:var(--hlt);padding:1px 8px;margin:0 6px 6px 0;font-size:12px}
+.meta{opacity:.75}
+a{color:inherit}
+footer{border-top:1px dashed #000;padding-top:14px;opacity:.7;font-size:12px}
+</style>
+</head>
+<body>
+<div id="intro"><h1 id="nm"></h1><div class="bar"><i></i></div><div class="sub">Curriculum Vitae</div></div>
+<main>
+<header>
+<h1>Mohamed Sherif</h1>
+<p class="meta">Alexandria, Egypt</p>
+<nav><a href="#about">01 About</a><a href="#skills">02 Skills</a><a href="#experience">03 Experience</a><a href="#education">04 Education</a><a href="#contact">05 Contact</a></nav>
+</header>
+<section id="about">
+<h2><span class="num">01</span> About</h2>
+<h3>Summary of Qualifications</h3>
+<p>Bachelor's Degree in Physical Education</p>
+<ul>
+<li>Comprehensive studies in sports, sports management, and sports planning.</li>
+<li>Learning leadership methods, team management, and training program development.</li>
+<li>Acquired skills in report preparation and performance data analysis.</li>
+</ul>
+<h3>Languages</h3>
+<ul><li>Arabic: Native Language</li><li>English: Intermediate (Able to read and understand business and administrative texts)</li></ul>
+<h3>Professional Development</h3>
+<ul>
+<li>Keeping up to date with the latest developments in management and administration.</li>
+<li>Participating in workshops and seminars related to team management and performance improvement.</li>
+<li>Continuously developing personal and administrative skills through reading and research.</li>
+</ul>
+</section>
+<section id="skills">
+<h2><span class="num">02</span> Skills</h2>
+<h3>Computer Skills</h3>
+<ul>
+<li>Proficient in using Microsoft Office (Word, Excel, PowerPoint) at an advanced level.</li>
+<li>Creating reports and analyzing data using Excel.</li>
+<li>Organizing meetings, drafting correspondence, and preparing presentations with PowerPoint.</li>
+<li>Managing databases and working with modern administrative systems.</li>
+</ul>
+<h3>Courses &amp; Certifications</h3>
+<ul>
+<li><b>ICDL Course:</b> Developed essential digital skills, including computer and file management, internet and email use, word processing, spreadsheets, and presentations.</li>
+<li><b>MOS Course:</b> Focused on Microsoft Office skills, including creating and formatting documents in Word, working with data and formulas in Excel, and preparing presentations in PowerPoint.</li>
+</ul>
+</section>
+<section id="experience">
+<h2><span class="num">03</span> Experience</h2>
+<h3>Assistant Activities Manager</h3>
+<ul>
+<li>Manage and organize sports activities and events within the organization.</li>
+<li>Coordinate teams and resources to ensure efficient workflow.</li>
+<li>Train new employees on administrative systems and work procedures.</li>
+</ul>
+<h3>Data Management</h3>
+<ul><li>Strong skills in creating reports, analyzing data, and managing administrative systems using Excel.</li></ul>
+</section>
+<section id="education">
+<h2><span class="num">04</span> Education</h2>
+<p>M.S. Sports Management, Faculty of Sport Education, August 2024</p>
+<p class="meta">Bachelor's Degree in Physical Education (see About)</p>
+</section>
+<section id="contact">
+<h2><span class="num">05</span> Contact</h2>
+<ul>
+<li>Location: Alexandria, Egypt</li>
+<li>Phone: <a href="tel:+201204736197">+20 01204736197</a></li>
+<li>Email: <a href="mailto:mouhammedsherif101@gmail.com">mouhammedsherif101@gmail.com</a></li>
+<li>Date of Birth: 20 November 2002</li>
+<li>References: Available upon request</li>
+</ul>
+</section>
+<footer>Mohamed Sherif - CV</footer>
+</main>
+<script>
+(function(){var t="Mohamed Sherif",h=document.getElementById('nm');
+for(var i=0;i<t.length;i++){var c=document.createElement('span');if(t[i]==' ')c.className='sp';c.innerHTML=t[i]==' '?'&nbsp;':t[i];c.style.animationDelay=(0.15+i*0.06)+'s';h.appendChild(c)}
+setTimeout(function(){document.getElementById('intro').classList.add('hide')},2500);
+var els=document.querySelectorAll('header,section,footer');els.forEach(function(e){e.classList.add('rv')});
+function chk(){var t=innerHeight*.92;els.forEach(function(e){if(e.getBoundingClientRect().top<t)e.classList.add('in')})}
+addEventListener('scroll',chk);addEventListener('load',function(){setTimeout(chk,2300)});setTimeout(chk,2600);
+})();
+</script>
+</body>
+</html>
